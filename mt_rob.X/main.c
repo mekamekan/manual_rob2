@@ -153,30 +153,191 @@ void main(void) {
     INTCONbits.PEIE = 1;
     INTCONbits.GIE = 1;
     
+    int sum = 0;
+    
+    motorA(0);
+    motorB(0);
+    motorC(0);
+    motorD(0);
+    motorE(0);
+    motorF(0);
+    while(SwitchA_Read());
     
     while(1){
-        for(int i = -600; i < 600; i++){
+        
+        sum = 0;
+        if(Signal1_Read()){
+            sum += 1;
+        }
+        else;
+        
+        if(Signal2_Read()){
+            sum += 2;
+        }
+        else;
+        
+        if(Signal3_Read()){
+            sum += 4;
+        }
+        else;
+        
+        if(Signal4_Read()){
+            sum += 8;
+        }
+        else;
+        
+        switch(sum){
+            case 0:
+                motorA(0);
+                motorB(0);
+                motorC(0);
+                motorD(0);
+                motorE(0);
+                motorF(600);
+                break;
+            case 1:
+                motorA(0);
+                motorB(0);
+                motorC(0);
+                motorD(0);
+                motorE(600);
+                motorF(0);
+                break;
+            case 2:
+                motorA(0);
+                motorB(0);
+                motorC(0);
+                motorD(0);
+                motorE(-600);
+                motorF(0);
+                break;
+            case 3:
+                motorA(0);
+                motorB(0);
+                motorC(0);
+                motorD(0);
+                motorE(0);
+                motorF(-600);
+                break;
+            case 4:
+                motorA(-600);
+                motorB(0);
+                motorC(0);
+                motorD(600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 5:
+                motorA(0);
+                motorB(600);
+                motorC(-600);
+                motorD(0);
+                motorE(0);
+                motorF(0);
+                break;
+            case 6:
+                motorA(0);
+                motorB(-600);
+                motorC(600);
+                motorD(0);
+                motorE(0);
+                motorF(0);
+                break;
+            case 7:
+                motorA(600);
+                motorB(0);
+                motorC(0);
+                motorD(-600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 8:
+                motorA(-600);
+                motorB(600);
+                motorC(-600);
+                motorD(600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 9:
+                motorA(600);
+                motorB(600);
+                motorC(-600);
+                motorD(-600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 10:
+                motorA(-600);
+                motorB(-600);
+                motorC(600);
+                motorD(600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 11:
+                motorA(600);
+                motorB(-600);
+                motorC(600);
+                motorD(-600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 12:
+                motorA(-600);
+                motorB(-600);
+                motorC(-600);
+                motorD(-600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 13:
+                motorA(600);
+                motorB(600);
+                motorC(600);
+                motorD(600);
+                motorE(0);
+                motorF(0);
+                break;
+            case 14:
+                motorA(0);
+                motorB(0);
+                motorC(0);
+                motorD(0);
+                motorE(0);
+                motorF(0);
+                break;
+            default:
+                motorA(0);
+                motorB(0);
+                motorC(0);
+                motorD(0);
+                motorE(0);
+                motorF(0);
+                break;
+        }
+        /*for(int i = -600; i < 600; i++){
             //motorA(i);
             //motorB(i);
-            motorC(i);
+            //motorC(i);
             //motorD(i);
             //motorE(i);
-            //motorF(i);
+            motorF(i);
             //printf("%c:%d\r\n", g_ReadData, i);
             LEDON();
-            __delay_ms(10);
+            __delay_ms(1);
         }
         for(int i = 600; i > -600; i--){
             //motorA(i);
             //motorB(i);
-            motorC(i);
+            //motorC(i);
             //motorD(i);
             //motorE(i);
-            //motorF(i);
+            motorF(i);
             //printf("i:%d\r\n", i);
             LEDOFF();
-            __delay_ms(10);
-        }
+            __delay_ms(1);
+        }*/
         
         /*if(!SwitchD_Read()){
             LEDON();

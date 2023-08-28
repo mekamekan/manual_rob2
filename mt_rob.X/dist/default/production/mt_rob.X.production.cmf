@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+$C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 idloc IDLOC 5 8000 8000 4 2 1
 reset_vec CODE 0 0 0 2 2 1
 end_init CODE 0 1D 1D 2 2 1
@@ -19,15 +19,22 @@ config CONFIG 4 8007 8007 2 2 1
 $dist/default/production\mt_rob.X.production.o
 cinit CODE 0 1F 1F 5 2 1
 idloc IDLOC 5 8000 8000 4 2 1
-text1 CODE 0 FE FE 73 2 1
-text2 CODE 0 171 171 1F 2 1
-text3 CODE 0 190 190 3 2 1
-text4 CODE 0 193 193 3 2 1
-maintext CODE 0 24 24 DA 2 1
-cstackCOMMON COMMON 1 70 70 B 1 1
-cstackBANK0 BANK0 1 20 20 4 1 1
+text1 CODE 0 38B 38B 73 2 1
+text2 CODE 0 3FE 3FE 73 2 1
+text3 CODE 0 471 471 73 2 1
+text4 CODE 0 4E4 4E4 73 2 1
+text5 CODE 0 557 557 73 2 1
+text6 CODE 0 5CA 5CA 73 2 1
+text7 CODE 0 63D 63D 1F 2 1
+text8 CODE 0 662 662 5 2 1
+text9 CODE 0 66C 66C 4 2 1
+text10 CODE 0 670 670 4 2 1
+text11 CODE 0 65C 65C 6 2 1
+text12 CODE 0 667 667 5 2 1
+maintext CODE 0 24 24 367 2 1
+cstackCOMMON COMMON 1 70 70 C 1 1
 intentry CODE 0 4 4 19 2 1
-bssCOMMON COMMON 1 7B 7B 1 1 1
+bssCOMMON COMMON 1 7C 7C 1 1 1
 config CONFIG 4 8007 8007 2 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -35,7 +42,7 @@ config CONFIG 4 8007 8007 2 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 24-6F 1
+RAM 20-6F 1
 RAM A0-EF 1
 RAM 120-16F 1
 RAM 1A0-1EF 1
@@ -61,7 +68,7 @@ RAM B20-B6F 1
 RAM BA0-BEF 1
 RAM C20-C6F 1
 RAM CA0-CBF 1
-BANK0 24-6F 1
+BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
 BANK3 1A0-1EF 1
@@ -72,9 +79,9 @@ BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
 CONST 2-3 2
-CONST 196-3FFF 2
+CONST 674-3FFF 2
 ENTRY 2-3 2
-ENTRY 196-3FFF 2
+ENTRY 674-3FFF 2
 SFR10 500-51F 1
 SFR11 580-59F 1
 SFR12 600-61F 1
@@ -98,7 +105,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 CODE 2-3 2
-CODE 196-3FFF 2
+CODE 674-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -126,11 +133,11 @@ BANK23 BA0-BEF 1
 BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
-COMMON 7C-7D 1
+COMMON 7D-7D 1
 STRCODE 2-3 2
-STRCODE 196-3FFF 2
+STRCODE 674-3FFF 2
 STRING 2-3 2
-STRING 196-3FFF 2
+STRING 674-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -145,66 +152,220 @@ STRING 196-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\mt_rob.X.production.o
-1F cinit CODE >1629:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-1F cinit CODE >1632:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-1F cinit CODE >1644:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-20 cinit CODE >1650:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-20 cinit CODE >1652:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-21 cinit CODE >1653:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-22 cinit CODE >1654:C:\Users\hirot\AppData\Local\Temp\xcAsp4k.s
-4 intentry CODE >198:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-6 intentry CODE >199:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-B intentry CODE >200:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-C intentry CODE >201:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-15 intentry CODE >202:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-16 intentry CODE >203:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-18 intentry CODE >204:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-19 intentry CODE >206:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-1B intentry CODE >210:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-193 text4 CODE >440:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-193 text4 CODE >441:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-195 text4 CODE >442:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-190 text3 CODE >436:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-190 text3 CODE >437:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-192 text3 CODE >438:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-171 text2 CODE >15:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-171 text2 CODE >43:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-173 text2 CODE >45:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-177 text2 CODE >46:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-17B text2 CODE >47:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-180 text2 CODE >48:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-185 text2 CODE >49:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-18B text2 CODE >52:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-18F text2 CODE >53:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-FE text1 CODE >270:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-FE text1 CODE >272:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-103 text1 CODE >272:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-107 text1 CODE >272:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-10F text1 CODE >273:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-114 text1 CODE >273:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-118 text1 CODE >273:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-120 text1 CODE >275:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-125 text1 CODE >275:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-129 text1 CODE >275:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-12D text1 CODE >276:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-12F text1 CODE >277:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-13B text1 CODE >278:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-13E text1 CODE >279:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-13F text1 CODE >280:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-141 text1 CODE >281:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-142 text1 CODE >282:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-146 text1 CODE >283:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-155 text1 CODE >284:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-157 text1 CODE >285:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-163 text1 CODE >286:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-166 text1 CODE >287:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-167 text1 CODE >288:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-169 text1 CODE >289:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-16A text1 CODE >291:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-16C text1 CODE >292:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-16D text1 CODE >293:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-16F text1 CODE >294:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-170 text1 CODE >299:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1F cinit CODE >1642:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+1F cinit CODE >1645:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+1F cinit CODE >1657:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+20 cinit CODE >1663:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+20 cinit CODE >1665:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+21 cinit CODE >1666:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+22 cinit CODE >1667:C:\Users\hirot\AppData\Local\Temp\xcAsq44.s
+4 intentry CODE >359:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+6 intentry CODE >360:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+B intentry CODE >361:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+C intentry CODE >362:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+15 intentry CODE >363:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+16 intentry CODE >364:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+18 intentry CODE >365:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+19 intentry CODE >367:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1B intentry CODE >371:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+667 text12 CODE >571:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+667 text12 CODE >572:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+66B text12 CODE >573:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+65C text11 CODE >575:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+65C text11 CODE >576:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+661 text11 CODE >577:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+670 text10 CODE >579:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+670 text10 CODE >580:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+673 text10 CODE >581:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+66C text9 CODE >583:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+66C text9 CODE >584:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+66F text9 CODE >585:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+662 text8 CODE >555:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+662 text8 CODE >556:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+666 text8 CODE >557:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+63D text7 CODE >15:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+63D text7 CODE >43:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+63F text7 CODE >45:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+643 text7 CODE >46:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+647 text7 CODE >47:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+64C text7 CODE >48:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+651 text7 CODE >49:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+657 text7 CODE >52:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+65B text7 CODE >53:D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+5CA text6 CODE >373:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5CA text6 CODE >375:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5CF text6 CODE >375:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5D3 text6 CODE >375:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5DB text6 CODE >376:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5E0 text6 CODE >376:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5E4 text6 CODE >376:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5EC text6 CODE >378:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5F1 text6 CODE >378:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5F5 text6 CODE >378:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5F9 text6 CODE >379:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5FB text6 CODE >380:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+607 text6 CODE >381:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+60A text6 CODE >382:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+60B text6 CODE >383:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+60D text6 CODE >384:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+60E text6 CODE >385:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+612 text6 CODE >386:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+621 text6 CODE >387:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+623 text6 CODE >388:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+62F text6 CODE >389:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+632 text6 CODE >390:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+633 text6 CODE >391:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+635 text6 CODE >392:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+636 text6 CODE >394:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+638 text6 CODE >395:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+639 text6 CODE >396:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+63B text6 CODE >397:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+63C text6 CODE >400:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+557 text5 CODE >402:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+557 text5 CODE >404:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+55C text5 CODE >404:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+560 text5 CODE >404:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+568 text5 CODE >405:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+56D text5 CODE >405:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+571 text5 CODE >405:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+579 text5 CODE >407:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+57E text5 CODE >407:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+582 text5 CODE >407:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+586 text5 CODE >408:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+588 text5 CODE >409:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+594 text5 CODE >410:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+597 text5 CODE >411:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+598 text5 CODE >412:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+59A text5 CODE >413:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+59B text5 CODE >414:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+59F text5 CODE >415:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5AE text5 CODE >416:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5B0 text5 CODE >417:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5BC text5 CODE >418:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5BF text5 CODE >419:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C0 text5 CODE >420:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C2 text5 CODE >421:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C3 text5 CODE >423:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C5 text5 CODE >424:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C6 text5 CODE >425:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C8 text5 CODE >426:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+5C9 text5 CODE >429:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4E4 text4 CODE >431:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4E4 text4 CODE >433:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4E9 text4 CODE >433:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4ED text4 CODE >433:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4F5 text4 CODE >434:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4FA text4 CODE >434:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4FE text4 CODE >434:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+506 text4 CODE >436:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+50B text4 CODE >436:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+50F text4 CODE >436:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+513 text4 CODE >437:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+515 text4 CODE >438:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+521 text4 CODE >439:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+524 text4 CODE >440:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+525 text4 CODE >441:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+527 text4 CODE >442:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+528 text4 CODE >443:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+52C text4 CODE >444:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+53B text4 CODE >445:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+53D text4 CODE >446:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+549 text4 CODE >447:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+54C text4 CODE >448:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+54D text4 CODE >449:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+54F text4 CODE >450:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+550 text4 CODE >452:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+552 text4 CODE >453:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+553 text4 CODE >454:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+555 text4 CODE >455:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+556 text4 CODE >460:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+471 text3 CODE >462:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+471 text3 CODE >464:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+476 text3 CODE >464:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+47A text3 CODE >464:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+482 text3 CODE >465:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+487 text3 CODE >465:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+48B text3 CODE >465:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+493 text3 CODE >467:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+498 text3 CODE >467:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+49C text3 CODE >467:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4A0 text3 CODE >468:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4A2 text3 CODE >469:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4AE text3 CODE >470:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4B1 text3 CODE >471:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4B2 text3 CODE >472:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4B4 text3 CODE >473:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4B5 text3 CODE >474:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4B9 text3 CODE >475:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4C8 text3 CODE >476:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4CA text3 CODE >477:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4D6 text3 CODE >478:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4D9 text3 CODE >479:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4DA text3 CODE >480:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4DC text3 CODE >481:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4DD text3 CODE >483:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4DF text3 CODE >484:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4E0 text3 CODE >485:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4E2 text3 CODE >486:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+4E3 text3 CODE >491:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3FE text2 CODE >493:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3FE text2 CODE >495:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+403 text2 CODE >495:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+407 text2 CODE >495:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+40F text2 CODE >496:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+414 text2 CODE >496:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+418 text2 CODE >496:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+420 text2 CODE >498:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+425 text2 CODE >498:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+429 text2 CODE >498:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+42D text2 CODE >499:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+42F text2 CODE >500:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+43B text2 CODE >501:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+43E text2 CODE >502:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+43F text2 CODE >503:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+441 text2 CODE >504:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+442 text2 CODE >505:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+446 text2 CODE >506:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+455 text2 CODE >507:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+457 text2 CODE >508:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+463 text2 CODE >509:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+466 text2 CODE >510:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+467 text2 CODE >511:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+469 text2 CODE >512:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+46A text2 CODE >514:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+46C text2 CODE >515:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+46D text2 CODE >516:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+46F text2 CODE >517:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+470 text2 CODE >522:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+38B text1 CODE >524:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+38B text1 CODE >526:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+390 text1 CODE >526:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+394 text1 CODE >526:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+39C text1 CODE >527:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3A1 text1 CODE >527:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3A5 text1 CODE >527:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3AD text1 CODE >529:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3B2 text1 CODE >529:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3B6 text1 CODE >529:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3BA text1 CODE >530:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3BC text1 CODE >531:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3C8 text1 CODE >532:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3CB text1 CODE >533:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3CC text1 CODE >534:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3CE text1 CODE >535:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3CF text1 CODE >536:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3D3 text1 CODE >537:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3E2 text1 CODE >538:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3E4 text1 CODE >539:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3F0 text1 CODE >540:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3F3 text1 CODE >541:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3F4 text1 CODE >542:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3F6 text1 CODE >543:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3F7 text1 CODE >545:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3F9 text1 CODE >546:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3FA text1 CODE >547:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3FC text1 CODE >548:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+3FD text1 CODE >553:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 24 maintext CODE >64:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 24 maintext CODE >65:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 27 maintext CODE >66:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
@@ -270,20 +431,151 @@ A1 maintext CODE >151:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_r
 A3 maintext CODE >152:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 A5 maintext CODE >153:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 A6 maintext CODE >154:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+A7 maintext CODE >156:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 A7 maintext CODE >158:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-AC maintext CODE >161:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-B4 maintext CODE >166:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-B7 maintext CODE >167:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-BF maintext CODE >168:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-C9 maintext CODE >168:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-CD maintext CODE >168:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-D1 maintext CODE >169:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-D6 maintext CODE >172:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-DE maintext CODE >177:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-E1 maintext CODE >178:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-E9 maintext CODE >179:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-F3 maintext CODE >179:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
-F7 maintext CODE >179:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+AD maintext CODE >159:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+B3 maintext CODE >160:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+B9 maintext CODE >161:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+BF maintext CODE >162:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+C5 maintext CODE >163:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+CB maintext CODE >164:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+CF maintext CODE >164:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+D3 maintext CODE >168:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+D5 maintext CODE >169:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+D9 maintext CODE >169:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+DD maintext CODE >170:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+E1 maintext CODE >174:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+E5 maintext CODE >174:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+E9 maintext CODE >175:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+ED maintext CODE >179:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+F1 maintext CODE >179:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+F5 maintext CODE >180:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+F9 maintext CODE >184:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+FD maintext CODE >184:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+101 maintext CODE >185:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+105 maintext CODE >186:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+106 maintext CODE >191:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+10C maintext CODE >192:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+112 maintext CODE >193:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+118 maintext CODE >194:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+11E maintext CODE >195:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+124 maintext CODE >196:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+12B maintext CODE >197:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+12C maintext CODE >199:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+132 maintext CODE >200:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+138 maintext CODE >201:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+13E maintext CODE >202:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+144 maintext CODE >203:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+14B maintext CODE >204:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+151 maintext CODE >205:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+152 maintext CODE >207:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+158 maintext CODE >208:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+15E maintext CODE >209:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+164 maintext CODE >210:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+16A maintext CODE >211:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+171 maintext CODE >212:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+177 maintext CODE >213:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+178 maintext CODE >215:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+17E maintext CODE >216:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+184 maintext CODE >217:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+18A maintext CODE >218:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+190 maintext CODE >219:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+196 maintext CODE >220:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+19D maintext CODE >221:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+19E maintext CODE >223:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1A5 maintext CODE >224:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1AB maintext CODE >225:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1B1 maintext CODE >226:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1B8 maintext CODE >227:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1BE maintext CODE >228:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1C4 maintext CODE >229:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1C5 maintext CODE >231:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1CB maintext CODE >232:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1D2 maintext CODE >233:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1D9 maintext CODE >234:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1DF maintext CODE >235:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1E5 maintext CODE >236:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1EB maintext CODE >237:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1EC maintext CODE >239:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1F2 maintext CODE >240:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+1F9 maintext CODE >241:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+200 maintext CODE >242:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+206 maintext CODE >243:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+20C maintext CODE >244:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+212 maintext CODE >245:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+213 maintext CODE >247:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+21A maintext CODE >248:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+220 maintext CODE >249:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+226 maintext CODE >250:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+22D maintext CODE >251:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+233 maintext CODE >252:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+239 maintext CODE >253:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+23A maintext CODE >255:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+241 maintext CODE >256:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+248 maintext CODE >257:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+24F maintext CODE >258:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+256 maintext CODE >259:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+25C maintext CODE >260:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+262 maintext CODE >261:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+263 maintext CODE >263:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+26A maintext CODE >264:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+271 maintext CODE >265:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+278 maintext CODE >266:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+27F maintext CODE >267:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+285 maintext CODE >268:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+28B maintext CODE >269:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+28C maintext CODE >271:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+293 maintext CODE >272:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+29A maintext CODE >273:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2A1 maintext CODE >274:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2A8 maintext CODE >275:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2AE maintext CODE >276:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2B4 maintext CODE >277:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2B5 maintext CODE >279:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2BC maintext CODE >280:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2C3 maintext CODE >281:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2CA maintext CODE >282:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2D1 maintext CODE >283:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2D7 maintext CODE >284:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2DD maintext CODE >285:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2DE maintext CODE >287:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2E5 maintext CODE >288:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2EC maintext CODE >289:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2F3 maintext CODE >290:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+2FA maintext CODE >291:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+300 maintext CODE >292:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+306 maintext CODE >293:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+307 maintext CODE >295:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+30E maintext CODE >296:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+315 maintext CODE >297:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+31C maintext CODE >298:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+323 maintext CODE >299:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+329 maintext CODE >300:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+32F maintext CODE >301:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+330 maintext CODE >303:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+336 maintext CODE >304:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+33C maintext CODE >305:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+342 maintext CODE >306:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+348 maintext CODE >307:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+34E maintext CODE >308:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+354 maintext CODE >309:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+355 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+357 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+35C maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+35F maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+362 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+365 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+368 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+36B maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+36E maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+371 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+374 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+377 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+37A maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+37D maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+380 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+383 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
+386 maintext CODE >318:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_rob.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -297,8 +589,8 @@ F7 maintext CODE >179:D:\Users\hirot\Desktop\PIC_documents\2023\manual_rob2\mt_r
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 3 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-__Hspace_0 196 0 ABS 0 - -
-__Hspace_1 7C 0 ABS 0 - -
+__Hspace_0 674 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10010 0 ABS 0 - -
@@ -309,8 +601,6 @@ _PWM4CON 619 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _PWM4DCH 618 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _PWM4DCL 617 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_LEDOFF 32C 0 CODE 0 text4 dist/default/production\mt_rob.X.production.o
-main@i 20 0 BANK0 1 cstackBANK0 dist/default/production\mt_rob.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _LATA 10C 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _LATB 10D 0 ABS 0 - dist/default/production\mt_rob.X.production.o
@@ -322,20 +612,20 @@ _WPUA 20C 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _WPUD 20F 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+___sp 0 0 STACK 2 stack C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 _main 48 0 CODE 0 maintext dist/default/production\mt_rob.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-start 3A 0 CODE 0 init C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+start 3A 0 CODE 0 init C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
 _OPTION_REGbits 97 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -355,12 +645,12 @@ _CCPR7H 29A 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _CCPR7L 299 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _CCPR8H 312 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _CCPR8L 311 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-__end_of___wmul 320 0 CODE 0 text2 dist/default/production\mt_rob.X.production.o
-_g_ReadData 7B 0 COMMON 1 bssCOMMON dist/default/production\mt_rob.X.production.o
+__end_of___wmul CB8 0 CODE 0 text7 dist/default/production\mt_rob.X.production.o
+_g_ReadData 7C 0 COMMON 1 bssCOMMON dist/default/production\mt_rob.X.production.o
+main@sum 7A 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-___stacklo 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-_LEDOFF 326 0 CODE 0 text4 dist/default/production\mt_rob.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+___stacklo 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 start_initialization 3E 0 CODE 0 cinit dist/default/production\mt_rob.X.production.o
 _OSCCON 9B 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _RA0PPS E90 0 ABS 0 - dist/default/production\mt_rob.X.production.o
@@ -378,11 +668,15 @@ _RD4PPS EAC 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _RD5PPS EAD 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _RD6PPS EAE 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _RD7PPS EAF 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-__end_of_motorC 2E2 0 CODE 0 text1 dist/default/production\mt_rob.X.production.o
-__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\mt_rob.X.production.o
+__end_of_motorA C7A 0 CODE 0 text6 dist/default/production\mt_rob.X.production.o
+__end_of_motorB B94 0 CODE 0 text5 dist/default/production\mt_rob.X.production.o
+__end_of_motorC AAE 0 CODE 0 text4 dist/default/production\mt_rob.X.production.o
+__end_of_motorD 9C8 0 CODE 0 text3 dist/default/production\mt_rob.X.production.o
+__end_of_motorE 8E2 0 CODE 0 text2 dist/default/production\mt_rob.X.production.o
+__end_of_motorF 7FC 0 CODE 0 text1 dist/default/production\mt_rob.X.production.o
 _TX1REG 19A 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _TX1STA 19E 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+___int_sp 0 0 STACK 2 stack C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -445,6 +739,7 @@ __Hmaintext 0 0 ABS 0 maintext -
 _BAUD1CON 19F 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 4 config -
+_SwitchA_Read CC4 0 CODE 0 text8 dist/default/production\mt_rob.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -514,21 +809,37 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-___wmul 2E2 0 CODE 0 text2 dist/default/production\mt_rob.X.production.o
-__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+___wmul C7A 0 CODE 0 text7 dist/default/production\mt_rob.X.production.o
 int$flags 7E 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _ISR 8 0 CODE 0 intentry dist/default/production\mt_rob.X.production.o
-__S0 196 0 ABS 0 - -
-__S1 7C 0 ABS 0 - -
+__S0 674 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
 __end_of_ISR 3A 0 CODE 0 intentry dist/default/production\mt_rob.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+motorA@duty 76 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
 _CCPTMRS1bits 29E 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _CCPTMRS2bits 29F 0 ABS 0 - dist/default/production\mt_rob.X.production.o
+motorB@duty 76 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
 motorC@duty 76 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
+motorD@duty 76 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
+_Signal1_Read CCE 0 CODE 0 text12 dist/default/production\mt_rob.X.production.o
 _PIE1bits 91 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-_motorC 1FC 0 CODE 0 text1 dist/default/production\mt_rob.X.production.o
+__end_of_SwitchA_Read CCE 0 CODE 0 text8 dist/default/production\mt_rob.X.production.o
+motorE@duty 76 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
+_Signal2_Read CB8 0 CODE 0 text11 dist/default/production\mt_rob.X.production.o
+_motorA B94 0 CODE 0 text6 dist/default/production\mt_rob.X.production.o
+_motorB AAE 0 CODE 0 text5 dist/default/production\mt_rob.X.production.o
+_motorC 9C8 0 CODE 0 text4 dist/default/production\mt_rob.X.production.o
+_motorD 8E2 0 CODE 0 text3 dist/default/production\mt_rob.X.production.o
+_motorE 7FC 0 CODE 0 text2 dist/default/production\mt_rob.X.production.o
+_motorF 716 0 CODE 0 text1 dist/default/production\mt_rob.X.production.o
+__ptext10 CE0 0 CODE 0 text10 dist/default/production\mt_rob.X.production.o
+__ptext11 CB8 0 CODE 0 text11 dist/default/production\mt_rob.X.production.o
+__ptext12 CCE 0 CODE 0 text12 dist/default/production\mt_rob.X.production.o
+motorF@duty 76 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
+_Signal3_Read CE0 0 CODE 0 text10 dist/default/production\mt_rob.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -553,20 +864,19 @@ __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
 __pmaintext 48 0 CODE 0 maintext dist/default/production\mt_rob.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
+_Signal4_Read CD8 0 CODE 0 text9 dist/default/production\mt_rob.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 ___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
 _LATAbits 10C 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _LATBbits 10D 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _LATDbits 10F 0 ABS 0 - dist/default/production\mt_rob.X.production.o
-main@i_504 22 0 BANK0 1 cstackBANK0 dist/default/production\mt_rob.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__pbssCOMMON 7B 0 COMMON 1 bssCOMMON dist/default/production\mt_rob.X.production.o
-__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\mt_rob.X.production.o
 _PIR1bits 11 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Lend_init 3A 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -575,15 +885,24 @@ _T2CLKCONbits 497 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Hintentry 3A 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 1FC 0 CODE 0 text1 dist/default/production\mt_rob.X.production.o
-__ptext2 2E2 0 CODE 0 text2 dist/default/production\mt_rob.X.production.o
-__ptext3 320 0 CODE 0 text3 dist/default/production\mt_rob.X.production.o
-__ptext4 326 0 CODE 0 text4 dist/default/production\mt_rob.X.production.o
+__end_of_Signal1_Read CD8 0 CODE 0 text12 dist/default/production\mt_rob.X.production.o
+__end_of_Signal2_Read CC4 0 CODE 0 text11 dist/default/production\mt_rob.X.production.o
+__end_of_Signal3_Read CE8 0 CODE 0 text10 dist/default/production\mt_rob.X.production.o
+__ptext1 716 0 CODE 0 text1 dist/default/production\mt_rob.X.production.o
+__ptext2 7FC 0 CODE 0 text2 dist/default/production\mt_rob.X.production.o
+__ptext3 8E2 0 CODE 0 text3 dist/default/production\mt_rob.X.production.o
+__ptext4 9C8 0 CODE 0 text4 dist/default/production\mt_rob.X.production.o
+__ptext5 AAE 0 CODE 0 text5 dist/default/production\mt_rob.X.production.o
+__ptext6 B94 0 CODE 0 text6 dist/default/production\mt_rob.X.production.o
+__ptext7 C7A 0 CODE 0 text7 dist/default/production\mt_rob.X.production.o
+__ptext8 CC4 0 CODE 0 text8 dist/default/production\mt_rob.X.production.o
+__ptext9 CD8 0 CODE 0 text9 dist/default/production\mt_rob.X.production.o
+__end_of_Signal4_Read CE0 0 CODE 0 text9 dist/default/production\mt_rob.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
-___heap_lo 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsp4k.o
+___heap_hi 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
+___heap_lo 0 0 ABS 0 - C:\Users\hirot\AppData\Local\Temp\xcAsq44.o
 __end_of__initialization 40 0 CODE 0 cinit dist/default/production\mt_rob.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 _SP1BRGH 19C 0 ABS 0 - dist/default/production\mt_rob.X.production.o
@@ -591,9 +910,7 @@ _SP1BRGL 19B 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.production.o
 __Hend_init 3E 0 CODE 0 end_init -
-__end_of_main 1FC 0 CODE 0 maintext dist/default/production\mt_rob.X.production.o
-__end_of_LEDON 326 0 CODE 0 text3 dist/default/production\mt_rob.X.production.o
-_LEDON 320 0 CODE 0 text3 dist/default/production\mt_rob.X.production.o
+__end_of_main 716 0 CODE 0 maintext dist/default/production\mt_rob.X.production.o
 _RXPPS E3D 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _T2CON 495 0 ABS 0 - dist/default/production\mt_rob.X.production.o
 _TRISA 8C 0 ABS 0 - dist/default/production\mt_rob.X.production.o
@@ -634,9 +951,8 @@ ___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\mt_rob.X.prod
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackCOMMON 1 70 70 C 1
-cstackBANK0 1 20 20 4 1
-intentry 0 4 8 192 2
+cstackCOMMON 1 70 70 D 1
+intentry 0 4 8 670 2
 reset_vec 0 0 0 2 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
