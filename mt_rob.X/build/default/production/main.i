@@ -23989,7 +23989,10 @@ void main(void) {
     motorD(0);
     motorE(0);
     motorF(0);
+
+    LEDOFF();
     while(SwitchA_Read());
+    LEDON();
 
     while(1){
 
@@ -24048,82 +24051,82 @@ void main(void) {
                 motorF(-600);
                 break;
             case 4:
-                motorA(-600);
+                motorA(-500);
                 motorB(0);
                 motorC(0);
-                motorD(600);
+                motorD(500);
                 motorE(0);
                 motorF(0);
                 break;
             case 5:
                 motorA(0);
-                motorB(600);
-                motorC(-600);
+                motorB(500);
+                motorC(-500);
                 motorD(0);
                 motorE(0);
                 motorF(0);
                 break;
             case 6:
                 motorA(0);
-                motorB(-600);
-                motorC(600);
+                motorB(-500);
+                motorC(500);
                 motorD(0);
                 motorE(0);
                 motorF(0);
                 break;
             case 7:
-                motorA(600);
+                motorA(500);
                 motorB(0);
                 motorC(0);
-                motorD(-600);
+                motorD(-500);
                 motorE(0);
                 motorF(0);
                 break;
             case 8:
-                motorA(-600);
-                motorB(600);
-                motorC(-600);
-                motorD(600);
+                motorA(-500);
+                motorB(500);
+                motorC(-500);
+                motorD(500);
                 motorE(0);
                 motorF(0);
                 break;
             case 9:
-                motorA(600);
-                motorB(600);
-                motorC(-600);
-                motorD(-600);
+                motorA(500);
+                motorB(500);
+                motorC(-500);
+                motorD(-500);
                 motorE(0);
                 motorF(0);
                 break;
             case 10:
-                motorA(-600);
-                motorB(-600);
-                motorC(600);
-                motorD(600);
+                motorA(-500);
+                motorB(-500);
+                motorC(500);
+                motorD(500);
                 motorE(0);
                 motorF(0);
                 break;
             case 11:
-                motorA(600);
-                motorB(-600);
-                motorC(600);
-                motorD(-600);
+                motorA(500);
+                motorB(-500);
+                motorC(500);
+                motorD(-500);
                 motorE(0);
                 motorF(0);
                 break;
             case 12:
-                motorA(-600);
-                motorB(-600);
-                motorC(-600);
-                motorD(-600);
+                motorA(-500);
+                motorB(-500);
+                motorC(-500);
+                motorD(-500);
                 motorE(0);
                 motorF(0);
                 break;
             case 13:
-                motorA(600);
-                motorB(600);
-                motorC(600);
-                motorD(600);
+                motorA(500);
+                motorB(500);
+                motorC(500);
+                motorD(500);
                 motorE(0);
                 motorF(0);
                 break;
@@ -24144,7 +24147,7 @@ void main(void) {
                 motorF(0);
                 break;
         }
-# 355 "main.c"
+# 358 "main.c"
     }
     return;
 }
